@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="work">
+  <div class="workitem">
+    {% for item in site.data.work %}
+  <ul>
+    {% for project in item.works %}
+    <li>
+      <a href="{{project.url}}">
+        <div class="img">
+          <img width="384" src="{{site.url}}/{{project.img}}" alt="{{project.details}}">
+          <p>{{project.details}}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,93 @@
+header{
+  display: flex;
+  background: #fff;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 0;
+  @include phone{
+    padding: 1.5rem 1rem 0;
+  }
+  @include tablet{
+    padding: 1.5rem 1rem 0;
+  }
+  @include desktop{
+    padding: 1.5rem 4rem;
+  }
+  @include largedesktop{
+    padding: 1.5rem 4rem;
+  }
+  @include biglargedesktop{
+    padding: 1.5rem 4rem;
+  }
+  .tophead{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+    @include phone{
+      flex-direction: column;
+      text-align: center;
+    }
+    @include tablet{
+      flex-direction: column;
+      text-align: center;
+    }
+    @include desktop{
+      flex-direction: row;
+      text-align: left;
+    }
+    @include largedesktop{
+      flex-direction: row;
+      text-align: left;
+    }
+    @include biglargedesktop{
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  .head{
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: none;
+      color: #3D4853;
+      transition: color 0.1s ease-in-out;
+      &:hover{
+        color: lighten(#3D4853, 10%);
+      }
+    }
+    h1{
+      margin: 0;
+      font-family: GothamRoundedMedium;
+    }
+    h5{
+      margin: 0;
+      color: #3D4853;
+      font-family: GothamRoundedMedium;
+    }
+  }
+  .head-nav{
+    width: 300px;
+    ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      li{
+        a{
+          text-decoration: none;
+          color: #3D4853;
+          transition: color 0.1s ease-in-out;
+          &:hover{
+            color: #3B73E2;
+          }
+        }
+      }
+    }
+  }
+}

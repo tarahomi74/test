@@ -1,0 +1,157 @@
+.hero {
+  // padding: 5rem 0;
+  text-align: center;
+  min-height: 100vh;
+  &.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.four{
+      width: 50%;
+      margin: 0 auto;
+      direction: rtl;
+      div{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        h6{
+          font-family: GothamRoundedMedium,Sahel;
+          margin: 1rem 0;
+          width: 50%;
+        }
+      }
+      .foot{
+        font-family: GothamRoundedMedium,Sahel;
+        font-size: .9rem;
+        font-weight: normal;
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  }
+  img{
+    width: 200px;
+    @include phone{
+      width: 200px;
+    }
+    @include tablet{
+      width: 250px;
+    }
+    @include desktop{
+      width: 250px;
+    }
+    @include largedesktop{
+      width: 250px;
+    }
+    @include biglargedesktop{
+      width: 250px;
+    }
+  }
+
+  h2{
+    font-family: GothamRoundedMedium,Sahel;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin: 0;
+    @include phone{
+      font-size: 2rem;
+    }
+    @include tablet{
+      font-size: 2.5rem;
+    }
+    @include desktop{
+      font-size: 2.5rem;
+    }
+    @include largedesktop{
+      font-size: 2.5rem;
+    }
+    @include biglargedesktop{
+      font-size: 2.5rem;
+    }
+  }
+  h4{
+    font-family: GothamRoundedMedium,Sahel;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    margin: 0;
+    @include phone{
+      font-size: 1.7rem;
+    }
+    @include tablet{
+      font-size: 2rem;
+    }
+    @include desktop{
+      font-size: 2rem;
+    }
+    @include largedesktop{
+      font-size: 2rem;
+    }
+    @include biglargedesktop{
+      font-size: 2rem;
+    }
+  }
+  h6{
+    font-family: GothamRoundedMedium,Sahel;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 1rem auto;
+    @include phone{
+      font-size: 1rem;
+    }
+    @include tablet{
+      font-size: 1.2rem;
+    }
+    @include desktop{
+      font-size: 1.2rem;
+    }
+    @include largedesktop{
+      font-size: 1.2rem;
+    }
+    @include biglargedesktop{
+      font-size: 1.2rem;
+    }
+    a{
+      color: #444;
+      text-decoration: none;
+      &:hover{
+        color: #0000CD;
+      }
+    }
+  }
+}
+.notfound{
+  header{
+    display: none;
+  }
+footer{
+    display: none;
+  }
+}
+
+.disqus{
+  width: 100%;
+  direction: rtl;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  @include phone{
+   padding: 3rem 1rem;
+  }
+  @include tablet{
+    padding: 3rem 1rem;
+  }
+  @include desktop{
+    padding: 3rem 4rem;
+  }
+  @include largedesktop{
+    padding: 3rem 7rem;
+  }
+  @include biglargedesktop{
+    padding: 3rem 7rem;
+  }
+}
